@@ -13,7 +13,7 @@
 
 @ 4월 6일 <br>
 초기 구상안중 5번째 페이지로 동영상이나 이미지로 시각자료를 보여주면서 textview 와 imageview 를 이용해서 운동방법을 알아볼 수 있는 창과 그 운동을 할때 주의사항 칸을 만들었고 그안에 들어갈 내용들을 조사해 보았다 
-~~
+~~~javascript
 <ImageView
             android:id="@+id/exerciseImage"
             android:layout_width="200dp"
