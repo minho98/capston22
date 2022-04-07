@@ -20,6 +20,15 @@
             android:layout_height="200dp"
             android:layout_margin="10dp"
             android:src="@drawable/img1" />
+
+<TextView
+            android:id="@+id/explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="운동방법"
+            android:textSize="25dp" />
 ~~~
             
 
