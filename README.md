@@ -4,7 +4,7 @@
 포트폴리오 소개 사이트 URL :<br>
 
 # [졸업 작품 소개]
-- 작품명 : 
+- 작품명 : 이두박근
 - 개발환경 : 안드로이드 스튜디오
 - 작품 소개 : 어플을 사용해서 내가 오늘 무슨 운동을 얼마나 했는지 기록할 수 있고 내가 원하는 부위에 운동들을 검색해서 내가 필요한 운동의 방법이나 도움을 얻을 수 있게 도움을 줄 수 있는 어플을 구성하려한다.
 - 작품의 특징 : 내가 요일마다 어떤 운동을 했는지 기록해 놓음에 따라서 이번주 오늘 다음날 내가 어떤부위 어떤운동을 해야할지 알기 쉽게 도움을 받을 수 있다.
@@ -12,6 +12,55 @@
 # [개발일지]
 
 @ 4월 13일 <br>
+
+오늘은 작품 소개 페이지 제작을 해보았다 저번학기까지 배운 html 코드를 이용해서 간단한 페이지 제작을 실행하고 있다. 오늘 만든 구성요소중 jd슬라이드를 이용하여 만든 슬라이드 html코드 및 css코드이다
+
+- 슬라이드 배너 html 코드
+~~~javascript
+<section class="jd-slider main-slider main-visual">
+      <div class="slide-inner">
+          <ul class="slide-area">
+              <li>
+                  <a href="#"><img src="Img/g1.jpeg" alt="image01">
+                    <dl>
+                      <dt class="tit">이두박근 피트니스</dt>
+                      <!-- <dd>**</dd> -->
+                    </dl>
+                  </a>
+              </li>
+              </ul>
+        </div>
+  </section>
+~~~
+- jd슬라이더를 이용하려면 이 스크립트 코드가 필수적으로 들어가야 한다.
+~~~javascript
+
+<script>
+        window.onload = function () {
+          
+          $('.main-slider').jdSlider({
+                wrap: '.slide-inner',
+                isAuto: true,
+                isLoop: true
+            });
+            $('.slider').jdSlider({
+                wrap: '.slide-inner',
+                slideShow: 4,
+                slideToScroll: 1,
+                isLoop: true,
+                responsive: [{
+                    viewSize: 768,
+                    settings: {
+                        slideShow: 1
+                    }
+                }]
+            });
+            
+        };
+    </script>
+
+
+~~~
 
 @ 4월 6일 <br>
 초기 구상안중 5번째 페이지로 동영상이나 이미지로 시각자료를 보여주면서 textview 와 imageview 를 이용해서 운동방법을 알아볼 수 있는 창과 그 운동을 할때 주의사항 칸을 만들었고 그안에 들어갈 내용들을 조사해 보았다 
