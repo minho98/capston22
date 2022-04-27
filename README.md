@@ -11,6 +11,53 @@
 
 # [개발일지]
 
+@ 4월 27일 <br>
+오늘은 listview를 사용해서 어플에서 운동방법을 볼수있는 초기화면 을 구성하였고 부족한 소개페이지에 html을 사진을 추가해보았습니다
+
+- html 홈페이지 꾸미기
+
+~~~javascript
+<section class="sec-cont row2">
+      <div class="cont-card3">
+        <div class="card1 card">
+          
+          <!-- <div class="cont-text">
+            <h1>HTML</h1>
+            <p>the language for building web pages</p>
+          </div> -->
+          <a href="#" class="btnn">BMI 지수 체크하기</a>
+        </div>
+        <div class="card2 card">
+          <a href="#" class="btnn">메인 페이지</a>
+        </div>
+        <div class="card3 card">
+          <a href="#" class="btnn">운동법 알아보기</a>
+        </div>
+      </div>
+    </section>
+ ~~~
+ - listview를 사용해서 리스트 목록 작성하기 (adapter 사용구문)
+~~~javascript
+
+final TextView tvSelect = findViewById(R.id.tv_select);
+        ListView listView = findViewById(R.id.listView);
+
+        List<String> list = new ArrayList<>();
+        list.add("1번운동");
+        list.add("2번운동");
+        list.add("3번운동");
+        list.add("4번운동");
+
+ArrayAdapter<String>adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                String data = (String) adapterView.getItemAtPosition(position);
+                tvSelect.setText(data);
+~~~
+
 @ 4월 13일 <br>
 
 오늘은 작품 소개 페이지 제작을 해보았다 저번학기까지 배운 html 코드를 이용해서 간단한 페이지 제작을 실행하고 있다. 오늘 만든 구성요소중 jd슬라이드를 이용하여 만든 슬라이드 html코드 및 css코드이다
