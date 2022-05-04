@@ -11,6 +11,39 @@
 
 # [개발일지]
 
+@ 5월 4일
+오늘은 우리조의 주제에 있어서 운동방법을 소개하고 그 운동들을 나열할 수 있는 리스트 목록 페이지를 만들었습니다 저번주에 사용할 listview를 사용하려고 했지만 그렇게하면 데이터 양이 너무 방대하게 커질것같아서 버튼으로 리스트 목록을 수정하였습니다
+~~~javascript
+<Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="상체운동 리스트"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        android:backgroundTint="#573535"
+        android:textSize="30dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#AEDEE4"
+            android:textSize="20dp"
+            android:textColor="#0F8DF1"
+            android:text="벤치 프레스" />
+~~~
+
 @ 4월 27일 <br>
 오늘은 listview를 사용해서 어플에서 운동방법을 볼수있는 초기화면 을 구성하였고 부족한 소개페이지에 html을 사진을 추가해보았습니다
 
