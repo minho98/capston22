@@ -11,7 +11,31 @@
 
 # [개발일지]
 
-@ 5월 11일
+* 5월 18일
+
+오늘은 기능구현에 초점이 아닌 세부사항들을 수정하는데 초점을 맞추었다 내용 추가 및 디자인 부분들
+
+- html 꾸미는 요소들
+~~~javascript
+.cont-text{text-align: center;width:58%;float: right;margin-right:20px;}
+.cont-text h1{font-size:40px;font-weight: 900;width:200px;margin-bottom:10px;}
+.cont-text p{font-size:16px;font-weight:bold;}
+.btnn{display: inline-block;width:170px;height:40px;padding:13px 10px 0 10px; margin:30px;font-size:16px;font-weight:bold;color: black;border-radius:10px;border: solid 1px rgb(85, 81, 81);}
+.btnn::after{content: '';display:inline-block;width:24px;height:24px;background:url("../Img/arrow-right-solid.svg") no-repeat center/80%;vertical-align:middle;margin-left:15px;}
+~~~
+- 버튼의 색상을 변경하는 방법
+~~~javascript
+<Button
+        android:id="@+id/top"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="상체"
+        android:textSize="20dp"
+        android:textColor="#fddb00"
+        android:backgroundTint="#23346C"/>
+~~~
+
+* 5월 11일<br>
 
 오늘은 운동소개 방법 페이지에 들어갈 다양한 운동들의 종류 방법 주의사항 들을 조사해서 하체와 상체 자료들을 수집하였다(밑에는 그중에서 두가지를 예로 가져와 보았습니다 )
 
@@ -38,7 +62,7 @@ X 주의사항 : 먼저 운동시에 몸이 움직이지 않도록 다리를 고
 팔을 펼때는 너무 반동의 힘을 이용해 튕기지 않도록 한다
 
 
-@ 5월 4일
+* 5월 4일<br>
 오늘은 우리조의 주제에 있어서 운동방법을 소개하고 그 운동들을 나열할 수 있는 리스트 목록 페이지를 만들었습니다 저번주에 사용할 listview를 사용하려고 했지만 그렇게하면 데이터 양이 너무 방대하게 커질것같아서 버튼으로 리스트 목록을 수정하였습니다
 ~~~javascript
 <Button
@@ -71,7 +95,7 @@ X 주의사항 : 먼저 운동시에 몸이 움직이지 않도록 다리를 고
             android:text="벤치 프레스" />
 ~~~
 
-@ 4월 27일 <br>
+* 4월 27일 <br>
 오늘은 listview를 사용해서 어플에서 운동방법을 볼수있는 초기화면 을 구성하였고 부족한 소개페이지에 html을 사진을 추가해보았습니다
 
 - html 홈페이지 꾸미기
@@ -118,7 +142,7 @@ ArrayAdapter<String>adapter = new ArrayAdapter<>(this, android.R.layout.simple_l
                 tvSelect.setText(data);
 ~~~
 
-@ 4월 13일 <br>
+* 4월 13일 <br>
 
 오늘은 작품 소개 페이지 제작을 해보았다 저번학기까지 배운 html 코드를 이용해서 간단한 페이지 제작을 실행하고 있다. 오늘 만든 구성요소중 jd슬라이드를 이용하여 만든 슬라이드 html코드 및 css코드이다
 
@@ -169,7 +193,7 @@ ArrayAdapter<String>adapter = new ArrayAdapter<>(this, android.R.layout.simple_l
 
 ~~~
 
-@ 4월 6일 <br>
+* 4월 6일 <br>
 초기 구상안중 5번째 페이지로 동영상이나 이미지로 시각자료를 보여주면서 textview 와 imageview 를 이용해서 운동방법을 알아볼 수 있는 창과 그 운동을 할때 주의사항 칸을 만들었고 그안에 들어갈 내용들을 조사해 보았다 
 ~~~javascript
 <ImageView
@@ -191,7 +215,7 @@ ArrayAdapter<String>adapter = new ArrayAdapter<>(this, android.R.layout.simple_l
             
 
 
-@ 3월 30일 <br>
+* 3월 30일 <br>
 초기 구성안중 두번째 페이지인 운동방법 설명창 및 오늘 자신이 한 운동을 작성할수 있는 선택창과 선택 버튼을 구성하여 페이지를 제작하였다운동 설명창 답게 상단에 사진을 넣어서 시각효과를 더 극대화 할 수 있도록 하였고 밑에는 일지작성 버튼 및 내가 필요한 운동들을 더 찾아볼 수 있는 버튼들도 구성해 두었다.
 
 @ 3월 23일 <br>
