@@ -11,11 +11,40 @@
 
 # [개발일지]
 
-* 5월 18일
+* 5월 25일<br>
 
-오늘은 기능구현에 초점이 아닌 세부사항들을 수정하는데 초점을 맞추었다 내용 추가 및 디자인 부분들
+운동종류들중 유산소 파트 내용 및 html에서 css를 다듬었다<br>
 
-- html 꾸미는 요소들
+
+- 유산소 운동중 사이클 운동에서 주의사항을 텍스트뷰로 만들어 본것이다<br>
+~~~javascript
+<TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/kangwon_tt_bold"
+        android:text="주의사항"
+        android:textColor="#ff0000"
+        android:textSize="24dp" />
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="안장조절 과 페달의 고정장치를 몸에 맞게 설정하고 초반부터 너무 과도한 속도로 진행하지 않는다"
+        android:textSize="15dp"
+        android:textColor="#ff0000"
+        android:letterSpacing="0.13"
+        android:lineSpacingExtra="1.5dp"
+        />
+  ~~~
+
+* 5월 18일<br>
+
+오늘은 기능구현에 초점이 아닌 세부사항들을 수정하는데 초점을 맞추었다 내용 추가 및 디자인 부분들<br>
+
+- html 꾸미는 요소들<br>
 ~~~javascript
 .cont-text{text-align: center;width:58%;float: right;margin-right:20px;}
 .cont-text h1{font-size:40px;font-weight: 900;width:200px;margin-bottom:10px;}
@@ -37,7 +66,7 @@
 
 * 5월 11일<br>
 
-오늘은 운동소개 방법 페이지에 들어갈 다양한 운동들의 종류 방법 주의사항 들을 조사해서 하체와 상체 자료들을 수집하였다(밑에는 그중에서 두가지를 예로 가져와 보았습니다 )
+오늘은 운동소개 방법 페이지에 들어갈 다양한 운동들의 종류 방법 주의사항 들을 조사해서 하체와 상체 자료들을 수집하였다(밑에는 그중에서 두가지를 예로 가져와 보았습니다 )<br>
 
 ※ 렛플 다운
 @ 렛 = 바
